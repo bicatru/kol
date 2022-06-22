@@ -117,8 +117,9 @@
     });
 
     response.json().then(data => {
-      console.log(data["status"]);
+      console.log(data);
     });
+    console.log(data["status"]);
     document.getElementById('loading').style.display = 'none';
 
 };
