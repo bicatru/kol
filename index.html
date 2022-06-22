@@ -118,7 +118,6 @@
 
     response.json().then(data => {
       console.log(data["status"]);
-      document.getElementById("${data["status"]}").style.display = 'block';
     });
     document.getElementById('loading').style.display = 'none';
 
