@@ -118,7 +118,7 @@
 
     response.json().then(data => {
       console.log(data["status"]);
-      document.getElementById(${spc_ec}).style.display = 'block';
+      document.getElementById(${data["status"]}).style.display = 'block';
     });
     document.getElementById('loading').style.display = 'none';
 
