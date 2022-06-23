@@ -311,7 +311,7 @@ function show1(data, item) {
     </div>
     <!-- /PROFILE HEADER -->
 
-    <div style="background: #fff;border-radius: 16px;margin-top: 30px;"><center style="padding: 20px 50px 0px 50px;font-family: monospace;color: #ff551f;font-weight: 700;">Nhận ngay 1000 shopeexu khi mua hàng qua link rút gọn!</center>
+    <div id="rut" style="background: #fff;border-radius: 16px;margin-top: 30px;"><center style="padding: 20px 50px 0px 50px;font-family: monospace;color: #ff551f;font-weight: 700;">Nhận ngay 1000 shopeexu khi mua hàng qua link rút gọn!</center>
 <div class="section-filters-bar v2" style="box-shadow: none;margin-top: 0px;"><div class="section-filters-bar-actions full"><div class="form" style=""><div class="form-row split"><div class="form-item"><div class="form-input small with-button" style=""><label for="group-name">Nhập username shopee nhận xu</label><input type="text" id="user" style="padding-right: 20px;"></div></div><div class="form-item"><div class="form-input small with-button" style=""><label for="group-name">Nhập link sản phẩm bạn muốn mua</label><input type="text" id="link" style="padding-right: 20px;"></div></div><p class="return-to-shop" style="display: flex;">
     
 <a onclick="shork()" class="button wc-backward" style="min-width: 100px;color: #fff;">Rút gọn</a><a onclick="document.getElementById('user').value = '';document.getElementById('link').value = '';" class="button wc-backward" style="min-width: 100px;color: #fff;margin-left: 12px;">reset</a>
@@ -375,7 +375,7 @@ function show1(data, item) {
         <button id="close" onclick="document.getElementById('sucess').style.display = 'none';">×</button>
         <h2>Thành công!</h2>
         <p>Hãy ủng hộ tớ bằng cách mua hàng qua link rút gọn bên dưới để dịch vụ có thể duy trì lâu dài</p>
-        <a type="button" onclick="document.getElementById('err').style.display = 'none';" class="btn btn-primary" style="
+        <a type="button" href="#rut" onclick="document.getElementById('sucess').style.display = 'none';" class="btn btn-primary" style="
     color: #fff;
 ">Ủng hộ</a>
     </div>
@@ -386,7 +386,7 @@ function show1(data, item) {
         <button id="close" onclick="document.getElementById('havephone').style.display = 'none';">×</button>
         <h2>SPC_EC đã tồn tại!</h2>
         <p>Tài khoản shopee của bạn đã tồn tại trên hệ thống</p>
-        <a type="button" onclick="document.getElementById('err').style.display = 'none';" class="btn btn-primary" style="
+        <a type="button" onclick="document.getElementById('havephone').style.display = 'none';" class="btn btn-primary" style="
     color: #fff;
 ">Ok</a>
     </div>
@@ -397,7 +397,7 @@ function show1(data, item) {
         <button id="close" onclick="document.getElementById('nonephone').style.display = 'none';">×</button>
         <h2>SPC_EC chưa thiết lập sđt!</h2>
         <p>Dịch vụ chỉ hoạt động với tài khoản đã thiết lập số điện thoại, vui lòng thiết lập số điện thoại cho tài khoản shopee của bạn</p>
-        <a type="button" onclick="document.getElementById('err').style.display = 'none';" class="btn btn-primary" style="
+        <a type="button" onclick="document.getElementById('nonephone').style.display = 'none';" class="btn btn-primary" style="
     color: #fff;
 ">Ok</a>
     </div>
